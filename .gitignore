@@ -1,0 +1,7 @@
+.git/
+tmp/
+.agents/
+motores-baks-web-github.zip
+.DS_Store
+Thumbs.db
+*.log
