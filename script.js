@@ -352,8 +352,12 @@ const partsSlides = [
   }
 ];
 
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
+
 const setActivePage = (pageId, updateHash = true) => {
-  const nextPage = pageIds.includes(pageId) ? pageId : "inicio";
+  const nextPage = pageIds.includes(pageId) ? pageId : "nosotros";
 
   document.body.classList.add("page-mode");
   pageSections.forEach((section) => {
@@ -379,7 +383,7 @@ const setActivePage = (pageId, updateHash = true) => {
 };
 
 window.addEventListener("scroll", () => {
-  const currentPage = window.location.hash.replace("#", "") || "inicio";
+  const currentPage = window.location.hash.replace("#", "") || "nosotros";
   header.classList.toggle("scrolled", (!["inicio", "nosotros"].includes(currentPage) && document.body.classList.contains("page-mode")) || window.scrollY > 40);
 });
 
