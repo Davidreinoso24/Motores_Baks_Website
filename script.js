@@ -123,7 +123,7 @@ const aboutSlides = [
     ]
   },
   {
-    image: "assets/gallery/Montacarga_1.jpeg",
+    image: "assets/gallery/Montacarga_1_.JPG",
     alt: "Montacarga amarillo sobre plataforma de transporte",
     cardKicker: "Montacargas",
     cardTitle: "",
